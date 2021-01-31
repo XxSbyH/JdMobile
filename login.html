@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div data-role="page" id="loginhome">
+
+        <div data-role="header" id="loginheader">
+            <a href="#myPanel" data-rel="back" class="ui-btn ui-alt-icon ui-icon-carat-l  ui-btn-icon-notext ui-nodisc-icon"></a>
+            <h5>登录注册页</h5>
+        </div>
+      
+        <div data-role="main" class="ui-content" id="loginmain">
+            <form method="post" action="login.html">
+                <div class="ui-field-contain">
+
+                  <input type="text" name="fullname" id="fullname" placeholder="请输入你的账号" data-clear-btn="true">   
+
+                  <input type="password" name="psw" id="psw" placeholder="请输入你的密码" data-clear-btn="true" >
+                </div>
+                <input type="submit"  value="登录" id="sub"  data-ajax="false">
+              </form>
+              <p>
+                  <span class="pspan psl">账号密码登录</span>
+                  <span class="pspan psr">手机快速注册</span>
+            </p>
+            <div class="hffath">
+                <h4>其他登录方式</h4>
+            </div>
+           
+        </div>
+        
+      
+      </div>
+      <script>
+          $(function(){
+              $("#fullname").focus();
+              $("#fullname").blur(function () {
+                  checkfullName();
+              })
+              function checkfullName() {
+                  var username = $("#fullname").val();
+                  var re = /^\w{8,16}$/;
+
+                  if(username != '') {
+					  if (re.test(username)){
+						  
+					  }
+						else {
+							alert("用户名要8-16位");
+							$("#fullname").focus();
+						}
+                  }
+                  else {
+						     alert("用户名不能为空");
+							 return;
+                  }
+
+              }
+
+              $("#psw").blur(function () {
+                  checkpsw();
+              })
+              function checkpsw() {
+                  var psw = $("#psw").val();
+                  var re = /^\w{10,20}$/;
+				  
+				if(psw != '') {
+					  if (!re.test(psw)){
+						  alert("密码要8-16位");
+						  $("#psw").focus();
+					  }
+				}
+				else {
+						 alert("密码不能为空");
+						 return;
+				}
+              }
+
+                    
+
+          });
+      </script>
+</body>
+</html>

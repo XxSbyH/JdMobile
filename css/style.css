@@ -1,0 +1,390 @@
+#home {
+	background-color: #F6F6F6;
+}
+		#header {
+			height: 44.2px;
+			background-color: #C82519;
+			position: relative;
+		}
+		#header .ui-btn{
+			background-color: #C82519;
+
+			border: none;
+			color: white;
+			text-shadow: 0 0 0;
+		}
+		#header div {
+			height: 65%;
+			width: 50%;
+			position: absolute;
+			left: 15%;
+			top: 0;
+			border-radius: 25px;
+		}
+		#header div input {
+			padding-top: 0px;
+		}
+		
+		/*********************************轮播********************************/
+		.big{
+			width: 100%;
+			margin: 10px auto;
+			position: relative;/*参照物*/
+		}
+		.pic img{
+			width: 100%;
+			height: 100%;
+		}
+		.pic{
+			height: 154px;
+
+		}
+		.pic img{
+			position: absolute;/*绝对定位*/
+			display: none;
+			border-radius: 10px;
+		}
+		.arr{
+			width: 40px;
+			height: 70px;
+			font-size: 30px;
+			font-weight: 900;
+			line-height: 70px;
+			text-align: center;
+			color: #ccc;
+			position: absolute;
+			top: 125px;
+			display: none;
+			cursor: pointer;
+		}
+		.l-arr{
+			top: 25%;
+			left: 0px;
+		}
+		.r-arr{
+			top: 25%;
+			right: 0px;
+		}
+		.big:hover .arr{
+			display: block;
+		}
+		.arr:hover{
+			background: rgba(0,0,0,0.3);
+			color: #fff;
+		}
+		.but{
+			position: absolute;
+			bottom: 15px;
+			right: 12px;
+		}
+		.but ul li{
+			list-style-type: none;
+			width: 30px;
+			height: 20px;
+			/*border: 1px solid #ccc;*/
+			float: left;
+			margin-left: 10px;
+			text-align: center;
+			font-family: "microsoft yahei";
+			line-height: 20px;
+			font-size: 12px;
+			color: white;
+			background: rgba(0,0,0,0.3); 
+			cursor: pointer;
+		}
+		.but ul li:hover{
+			background:rgba(0,0,0,0.7);
+		}
+		.but .hover{
+			background:rgba(0,0,0,0.7);
+		}
+		/********************************/
+		#home {
+			position: relative;
+		}
+		.bgsmall {
+
+			display:block;
+			background-color: #C82519;
+			height: 90px;
+			width: 100%;
+			z-index: 0;
+			top:45px;
+			position: absolute;
+			border-radius: 0 0 15px 15px;
+		}
+		#main {
+			padding-top:0px;
+		}
+		#lianglie img {
+			width: 100%;
+			height: 100%;
+		}
+		#lianglie >div {
+			padding: 5px;
+		}
+		#main .ui-grid-d img{
+			width: 42.66px;
+			height: 42.66px;
+		}
+		#main .ui-grid-d h5 {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			color: #666;
+			font-weight: 400;
+		}
+		#main .ui-grid-d div {
+			text-align: center;
+		}
+		#lianglie .a-top img {
+			border-radius: 10px;
+		}
+		#lianglie .a-bo p {
+			margin: 3px;
+			font-size: 12px;
+		}
+		#lianglie .a-bo h3 {
+			font-weight: 550;
+			font-size: 14px;
+			color: red;
+			margin-top: 8px;
+		}
+		
+		/*********footer*********/
+		#footer #navb .ui-btn{
+			background-color: white;
+			color: gray;
+			font-size: 12px;
+		}
+		
+		#navb ul li a{
+			border: none;
+		}
+		
+		/********panelpanel************************/
+		#myPanel {
+			width: 40%;
+			background-color: #f6f6f6;
+		}
+		#myPanel >div {
+			padding: 0;
+		}
+		#myPanel ul{
+			padding-left: 0;
+			list-style: none;
+		}
+		#myPanel ul li {
+			text-align: center;
+		}
+		#myPanel ul li:hover a{
+			color: red;
+			background-color: white;
+		}
+		#myPanel ul li a{
+			text-decoration: none;
+			color:black;
+			font-size: 15px;
+			font-weight: 200;
+			display: block;
+			padding: 15px 15px 10px 5px;
+		}
+		#myPanel h5 {
+			color: #9F9F9F;
+			text-align: center;
+		}
+		/***********************分类页面*********************/
+		#fenyeheader {
+			height: 44.2px;
+			background-color: white;
+			position: relative;
+		}
+		#fenyeheader .ui-btn{
+			background-color: white;
+
+			border: none;
+			color: white;
+			text-shadow: 0 0 0;
+		}
+		#fenyeheader div {
+			height: 65%;
+			width: 70%;
+			position: absolute;
+			left: 10%;
+			top: 0;
+			border-radius: 25px;
+		}
+		#fenyeheader div input {
+			padding-top: 0px;
+		}
+
+		#fenyeheader > .ui-body-inherit {
+			background-color: #F7F7F7;
+		}
+		#fenyeheader .ui-shadow-inset{
+			box-shadow: inset 0 0px 0px rgba(0,0,0,.2);
+		}
+		/***************分类页 main*******************/
+		#box {
+			position: relative;
+		}
+		#fenleimain {
+			padding: 0;
+		}
+		#fenleimain #box {
+			width: 100%;
+		}
+		#fenleimain ul {
+			list-style: none;
+			padding-left: 0;
+		}
+		#fenleimain ul:first-child {
+			display:block;
+			width: 25%;
+			margin-top: 0;
+		}
+		#fenleimain ul:first-child li {
+			text-align: center;
+		}
+		.action {
+			color: red;
+			background-color: white;
+		}
+		#fenleimain ul:first-child li a {
+			text-decoration: none;
+			color:black;
+			font-size: 15px;
+			font-weight: 200;
+			display: block;
+			padding: 15px 5px 15px 5px;
+		}
+		#fenleimain ul:first-child li:hover a{
+			color: red;
+			background-color: white;
+		}
+		#fenleimain ul:nth-child(2) {
+			display: block;
+			margin-top: 0;
+			width:68%;
+			background-color:white;
+			padding-right:25px;
+		}
+		#fenleimain #content {
+			position: absolute;
+			left: 25%;
+			top: 0;
+		}
+		#fenleimain #content img {
+			width: 70px;
+			height: 70px;
+		}
+		#fenleimain .ui-grid-b div {
+			text-align: center;
+		}
+
+		#content >li {
+			display: none;
+		}
+		#content .now {
+			display:block;
+		}
+
+		/******************登录页面*****************************/
+		#loginheader {
+			height: 44.2px;
+			background-color: white;
+			position: relative;
+			border: none;
+		}
+		#loginheader .ui-btn{
+			background-color: white;
+
+			border: none;
+			color: white;
+			text-shadow: 0 0 0;
+		}
+		#loginheader h5 {
+			font-size: 16px;
+			font-weight: 350;
+		}
+		/**main**/
+		#loginmain {
+			background-color:#FFFFFF;
+			padding: 5px 25px;
+		}
+		.ui-field-contain {
+			padding-top: 0;
+			border-bottom: 0px;
+		}
+		.ui-field-contain .ui-body-inherit {
+			border-color: white;
+		}
+		.ui-field-contain > div {
+			color: #333;
+			text-shadow: 0 0px 0 #f3f3f3;
+			box-shadow: inset 0 0px 0px rgba(0,0,0,.2);
+		}
+		.ui-field-contain input {
+			border-bottom: 1px solid rgba(159,159,159,.3);
+		}
+		.ui-field-contain  input::-webkit-input-placeholder {
+			color: #9F9F9F;
+			font-size: 16px;
+		}
+		#loginmain .ui-focus {
+			box-shadow: none;
+		}
+
+		#loginmain .ui-input-btn {
+
+			font-weight: 200;
+			border:none;
+			background-color:#FCB6B3;
+			color: white;
+			width: 90%;
+			margin: 0 auto;
+			border-radius: 30px;
+			letter-spacing:10px;
+		}
+		#loginmain .pspan {
+			color: #9F9F9F;
+			font-size: 13px;
+			margin-top: 5px;
+		}
+		#loginmain .psl {
+			float: left;
+		}
+		#loginmain .psr {
+			float:right;
+		}
+		#loginmain .hffath {
+			margin-top: 118px;
+			margin-bottom: 90%;
+		}
+		#loginmain h4 {
+			display: block;
+			font-weight: 200;
+			color:rgb(220,220,220);
+			font-size: 12px;
+			text-align: center;
+			position: relative;
+		}
+		#loginmain h4::before{
+			display: block;
+			content: "";
+			width: 28%;
+			border:1px solid rgb(229,229,229);
+			position: absolute;
+			top: 45%;
+		}
+		#loginmain h4::after{
+			display: block;
+			content: "";
+			width: 28%;
+			border:1px solid rgb(229,229,229);
+			position: absolute;
+			top: 45%;
+			right: 0;
+		}
+		.changbu {
+			background-color: #F60B00;
+		}

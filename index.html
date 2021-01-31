@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- 引入 jQuery Mobile 样式 -->
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		
+		<!-- 引入 jQuery 库 -->
+		<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+	</head>
+	<body>
+		<div data-role="page" id="home">
+		
+		  <div data-role="header" id="header" >
+			  <a href="#myPanel" class="ui-btn ui-icon-bars  ui-btn-icon-notext ui-nodisc-icon"></a>
+				  <input type="text" data-type="search" placeholder="扫描仪">
+			  
+			  <a href="login.html" data-ajax="false">登录</a>
+			  <!-- *******************小背景图 -->
+		  </div><div class="bgsmall">
+				
+			</div>
+			
+			<!-- panel -->
+			<div data-role="panel" id="myPanel" data-display="overlay"> 
+			    <ul>
+					<li><a href="">制作人：刘沣庆</a></li>
+			    	<li><a href="">热门推荐</a></li>
+			    	<li><a href="">手机数码</a></li>
+			    	<li><a href="">电脑办公</a></li>
+			    	<li><a href="">家用电器</a></li>
+			    	<li><a href="">汽车生活</a></li>
+					<li><a href="">京东超市</a></li>
+					<h5>是否遇到以下问题？</h5>
+					<ul data-role="listview">
+					<li data-role="list-divider">登录不上</li>
+					<li><a href="#">寻找人工客服</a></li>
+					<li data-role="list-divider">账号被注册</li>
+					<li><a href="#">寻找人工客服</a></li>
+					<li data-role="list-divider">订单异常</li>
+					<li><a href="#">寻找人工客服</a></li>
+					</ul>
+			    </ul>
+			 </div>
+			
+			<!-- panel end -->
+			<!-- **************中间内容************ -->
+		  <div data-role="main" class="ui-content" id="main">
+			<!-- /***************************/轮播图 -->
+		    <div class="big">
+				<div class="pic">
+					<img src="img/lb.jpg" style="display:block;background:#ccc">
+					<img src="img/lb2.jpg">
+					<img src="img/lb3.jpg">
+					<img src="img/lb4.jpg">
+				</div>
+				<div class="l-arr arr"> &lt; </div>
+				<div class="r-arr arr"> &gt; </div>
+				<div class="but">
+					<ul>
+						<li class="hover">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 五列内容 -->
+			<div class="ui-grid-d">
+				<div class="ui-block-a">
+					<img src="img/j1.png" alt="">
+					<h5>京东超市</h5>
+				</div>
+				<div class="ui-block-b">
+					<img src="img/j2.png" alt="">
+					<h5>数码电器</h5>
+				</div>
+				<div class="ui-block-c">
+					<img src="img/j3.png" alt="">
+					<h5>京东服饰</h5>
+				</div>
+				<div class="ui-block-d">
+					<img src="img/j4.png" alt="">
+					<h5>京东生鲜</h5>
+				</div>
+				<div class="ui-block-e">
+					<img src="img/叫.png" alt="">
+					<h5>京东到家</h5>
+				</div>
+				
+				<div class="ui-block-a">
+					<img src="img/j6.png" alt="">
+					<h5>充值缴费</h5>
+				</div>
+				<div class="ui-block-b">
+					<img src="img/j7.png" alt="">
+					<h5>9.9元拼</h5>
+				</div>
+				<div class="ui-block-c">
+					<img src="img/j8.png" alt="">
+					<h5>领券</h5>
+				</div>
+				<div class="ui-block-d">
+					<img src="img/j9.png" alt="">
+					<h5>借钱</h5>
+				</div>
+				<div class="ui-block-e">
+					<img src="img/j10.png" alt="">
+					<h5>PLUS会员</h5>
+				</div>
+				
+			</div>
+			
+			<!-- 两列内容 -->
+			<div id="lianglie" class="ui-grid-a">
+				
+				
+				<img src="img/1.png" alt="">
+
+				<div class="ui-block-a">
+					<div class="a-top">
+						<img src="img/2.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="a-top">
+						<img src="img/3.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+
+				<div class="ui-block-a">
+					<div class="a-top">
+						<img src="img/4.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="a-top">
+						<img src="img/5.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+
+				<div class="ui-block-a">
+					<div class="a-top">
+						<img src="img/6.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="a-top">
+						<img src="img/7.jpg" alt="">
+					</div>
+					<div class="a-bo">
+						<p>蒙牛 纯牛奶 PURE MILK 250ml*16 航空定制装...</p>
+						<h3>￥88.88</h3>
+					</div>
+				</div>
+				
+			</div>
+
+
+		  </div>
+		
+		  <div data-role="footer" id="footer" data-position="fixed">
+		    <div data-role="navbar" id="navb">
+		    	<ul>
+		    		<li><a href="#" data-icon="navigation" class="ui-btn-active">首页</a></li>
+		    		<li><a href="fenlei.html" data-icon="bullets" data-ajax="false">分类</a></li>
+					<li><a href="#" data-icon="heart">京喜</a></li>
+		    		<li><a href="#" data-icon="shop">购物车</a></li>
+		    		<li><a href="#" data-icon="user">个人中心</a></li>
+		    	</ul>
+		    </div>
+		  </div>
+		
+		</div>
+	</body>
+	<script src="js/js.js"></script>
+</html>
